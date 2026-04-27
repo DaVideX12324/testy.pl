@@ -1,0 +1,290 @@
+	@charset "UTF-8";
+
+
+.navigation {
+  height: 13vh;
+  max-height: 25vw;
+  background: #6d7993;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0.88;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  top:2%;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 10px;
+}
+
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " ▾";
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: -4px;
+  right: 0;
+  height: 100px;
+  width: 70px;    
+  margin-right: 20px;
+
+}
+
+@media only screen and (max-width: 1039px) 
+{
+  .nav-mobile {
+    display: block;
+  }
+li
+{
+	display: list-item;
+}
+h4, #head_zal, #head_stw, #head_zal_1{
+	font-size:40px;
+	width:100%;
+	clear:both;
+	margin: 0;
+	transition: all 200ms ease-in-out;
+}
+h4 {
+	margin-right:50px;
+}
+#img_logo
+{
+	height:75px;
+	margin-left:0px;
+	float:none;
+	transition: all 200ms ease-in-out;
+}
+
+  nav {
+    width: 100%;
+    padding: 10px 0 15px;
+	background-color:rgba(255,255,255,0.85);	
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15	px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }    
+ #menu {
+	  z-index:10;
+	  position:relative;
+	  width:100%; 
+  }
+.menu{
+	  width:calc(100% - 60px); 
+  }
+  
+.nav-dropdown {
+    position: static;
+  }
+#rej_field
+{
+	padding:40px 0px;
+	transition: all 200ms ease-in-out;
+	
+}
+
+#form input[type="password"],
+#form input[type="text"],
+#form input[type="email"],
+#kat
+{
+	
+	width:400px;
+	height:70px;
+	font-size:30px;
+	transition: all 200ms ease-out-out;
+	margin:auto;
+	transition: all 200ms ease-in-out;
+
+}
+
+.haslo i {
+    position: absolute;
+    top: 50%;
+	width:1.4em;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.8em;
+    color: #999;
+	transition: all 200ms ease-in-out;
+}
+h2, #tekst
+{
+	font-size:30px;
+}
+
+#rej_tab:has(fieldset),.tox
+{
+	width:100%;
+}
+
+#rozw
+{
+	margin-top:27px;
+	margin-bottom:25px;
+	text-align:center;
+}
+
+#rej_btn, .zal, #stw, #btn, #rej_typ, .zwykle_a3
+{
+	font-size:30px; 	
+	padding:20px;
+	margin-top:20px;
+	width:auto;	
+	height:auto;
+	transition: all 200ms ease-in-out;
+}
+.btn
+{
+	font-size:30px; 	
+	padding:15px 15px;
+	margin-top:auto;
+	width:auto;	
+	height:auto;
+	transition: all 200ms ease-in-out;
+}
+.text
+{
+	height:70px;
+	transition: all 200ms ease-in-out;
+}
+
+#rej_typ
+{
+	font-size:30px; 	
+	padding:10px;
+	margin-top:20px;
+	width:400px;	
+	line-height:50px;
+}
+
+.select
+{
+	font-size:30px;
+	height:76.8px;
+}
+.styledSelect
+{
+	font-size:30px;
+	height:auto;
+	line-height:71px;
+}
+.styledSelect:after
+{
+	top:37.5px;
+}
+}
+
+@media screen and (max-height: 400px) {
+	#menu{
+		height:280px;
+		overflow:auto;
+	}
+
+}
+@media screen and (min-width: 1040px) {
+  #menu {
+    display: block !important;
+	
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  cursor: pointer;
+  padding: 20px 70px 30px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 10px;
+  width: 70px;
+  background: #ef8843;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -20px;
+}
+#nav-toggle span:after {
+  bottom: -20px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
