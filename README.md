@@ -37,7 +37,7 @@ testy.pl/
 ├── css/                   # Arkusze stylów
 ├── js/                    # Skrypty JavaScript
 ├── img/                   # Zasoby graficzne
-└── projekt (2).sql        # Schemat bazy danych
+└── baza_danych.sql        # Schemat bazy danych
 ```
 
 ## Uruchomienie lokalne
@@ -49,7 +49,7 @@ testy.pl/
 2. Skopiuj pliki do katalogu serwera (np. `htdocs` w XAMPP lub `www` w WAMP)
 3. Utwórz bazę danych MySQL i zaimportuj schemat:
    ```sql
-   SOURCE projekt\ \(2\).sql;
+   SOURCE baza_danych.sql;
    ```
 4. Skonfiguruj połączenie z bazą danych w pliku `dane.php`
 5. Uruchom serwer i otwórz `index.php` w przeglądarce
